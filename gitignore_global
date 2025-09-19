@@ -1,0 +1,98 @@
+#====================
+# vim
+#====================
+# Swap
+[._]*.s[a-v][a-z]
+# comment out the next line if you don't need vector files
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+#====================
+# vscode
+#====================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+#====================
+# Compiled source
+#====================
+*.class
+*.dll
+*.exe
+*.o
+*.so
+__pycache__/
+*.py[codz]
+*$py.class
+
+#====================
+# Package management
+#====================
+.venv/
+venv/
+venv.bak/
+node_modules/
+
+#====================
+# Environments
+#====================
+env/
+ENV/
+env.bak/
+.env
+.env.*
+!.env.example
+
+#====================
+# Logs and databases
+#====================
+*.log
+*.sqlite
+
+#====================
+# Unit test / coverage reports
+#====================
+htmlcov/
+coverage
+.coverage
+.coverage.*
+coverage.xml
+.pytest_cache/
+*.lcov
+
+#====================
+# Logs
+#====================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#====================
+# Cache
+#====================
+.npm/
+.ruff_cache/
+.mypy_cache/

@@ -1,0 +1,157 @@
+{
+  "window.restoreWindows": "none",
+  "workbench.startupEditor": "none",
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Daobeam",
+  "workbench.editor.enablePreview": false,
+  "editor.minimap.enabled": false,
+  "editor.suggestSelection": "first",
+  "editor.accessibilitySupport": "off",
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "explorer.confirmDelete": false,
+  "update.enableWindowsBackgroundUpdates": false,
+  "update.mode": "start",
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "zsh"
+		}
+	},
+  "files.associations": {
+    ".env": "properties",
+    ".env.*": "properties",
+    "Justfile": "just"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/__pycache__": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/htmlcov": true,
+    "**/cdk.out": true,
+    "**/.coverage": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/venv": true,
+    "**/.venv": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/build": true,
+    "**/out": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/poetry.lock": true,
+    "**/coverage.xml": true
+  },
+  // Python
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "ruff.organizeImports": true,
+  "ruff.importStrategy": "useBundled",
+  "ruff.configurationPreference": "filesystemFirst",
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  // End Python
+  // Javascript
+  "javascript.suggest.autoImports": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  // End Javascript
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true
+  },
+  "cSpell.userWords": [
+    "boto",
+    "Codeowners",
+    "spacelift"
+  ],
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "sonarlint.disableTelemetry": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "mypy-type-checker.severity": {
+    "error": "Warning"
+  },
+  "redhat.telemetry.enabled": false,
+  "jest.runMode": "on-demand",
+  "githubPullRequests.pullBranch": "never",
+  "debug.javascript.resourceRequestOptions": {},
+  "githubPullRequests.pushBranch": "always",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vscode-just.runInTerminal": true,
+  "vscode-just.useSingleTerminal": true,
+  "editorconfig.generateAuto": false,
+  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
+  "containers.composeCommand": "podman compose",
+  "dev.containers.dockerPath": "podman",
+  "dev.containers.dockerSocketPath": "/run/user/1000/podman/podman.sock",
+  "dev.containers.defaultExtensions": [
+    "charliermarsh.ruff",
+    "editorconfig.editorconfig"
+  ],
+  "github.copilot.nextEditSuggestions.fixes": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "remote.autoForwardPortsSource": "hybrid"
+}

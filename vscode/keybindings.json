@@ -1,0 +1,117 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+down",
+        "command": "editor.gotoNextFold"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.gotoPreviousFold"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+backspace",
+        "command": "-workbench.action.navigateToLastEditLocation"
+    },
+    {
+        "key": "ctrl+shift+backspace",
+        "command": "workbench.action.navigateBackInEditLocations"
+    },
+    {
+        "key": "ctrl+shift+f12",
+        "command": "workbench.action.maximizeEditorHideSidebar"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "-workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-selectAllSearchEditorMatches",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-addCursorsAtSearchResults",
+        "when": "fileMatchOrMatchFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "ctrl+shift+f12",
+        "command": "-workbench.action.maximizeEditor"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "cursorWordEndRight",
+        "when": "!inlineSuggestionVisible && textInputFocus && !accessibilityModeEnabled"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-cursorWordEndRight",
+        "when": "textInputFocus && !accessibilityModeEnabled"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "cursorWordPartRight",
+        "when": "config.intellij-idea-keybindings.useCamelHumpsWords && editorTextFocus && !inlineSuggestionVisible"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-cursorWordPartRight",
+        "when": "config.intellij-idea-keybindings.useCamelHumpsWords && editorTextFocus"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "cursorWordRight",
+        "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords && !inlineSuggestionVisible"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-cursorWordRight",
+        "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "ctrl+alt+o",
+        "command": "-workbench.action.remote.showMenu"
+    }
+]

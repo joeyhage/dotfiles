@@ -1,0 +1,3 @@
+alias -- gfl='gfa && gl'
+alias -- gsha='git log -1 --format=%H | cat'
+
