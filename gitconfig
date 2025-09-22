@@ -1,0 +1,21 @@
+[init]
+	defaultBranch = main
+
+[credential]
+  helper = cache --timeout=3600
+
+[grep]
+	lineNumber = true
+
+[user]
+	useConfigOnly = true
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+	path = ~/.gitconfig_local

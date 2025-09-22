@@ -1,0 +1,33 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+    shell:
+      stdout: true
+      stderr: true
+
+- link:
+    ~/.aliases:
+    ~/.fzf:
+    ~/.gitconfig:
+    ~/.gitignore_global:
+    ~/.vimrc:
+    ~/.zshrc:
+      force: true
+
+- create:
+  - ~/.local/bin
+
+- shell:
+  - [git submodule update --init --recursive, init submodules]
+  - [~/.fzf/install --key-bindings --completion --no-update-rc, install fzf]
+  - description: set editor
+    command: |
+      if command -v code &> /dev/null; then
+        export EDITOR=code
+      elif command -v vim &> /dev/null; then
+        export EDITOR=vim
+      else
+        exit 0
+      fi
+      sudo update-alternatives --install /usr/bin/editor editor "$(which "$EDITOR")" 100

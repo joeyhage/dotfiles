@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+apt-get update
+apt-get install -y --no-install-recommends \
+  curl \
+  jq \
+  less \
+  unzip \
+  vim \
+  zip \
+  zsh \
+;
+apt-get upgrade -y --no-install-recommends
+apt-get autoremove -y
+
+read -p 'Username: ' the_username
+
+echo Making zsh the default shell
+chsh -s /bin/zsh "${the_username}"
+
